@@ -6,17 +6,20 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import {artistCardStyles} from './artist-card.styles';
 import {IArtistCardProps} from './artist-card.interface';
+import { useHistory } from 'react-router-dom';
+import {formatFansCount} from '../../core/core.utils';
 
 export default(props: IArtistCardProps) => {
+  const history = useHistory();
   const classes = artistCardStyles();
   const {artist} = props;
   
-  const {picture_medium, name, nb_fan} = artist;
-  const fans = parseFloat((nb_fan / 1000).toFixed(2));
-
+  const {id, picture_medium, name, nb_fan} = artist;
+  const handleClick = () => history.push(`/artist/${id}`);
+  
   return (
     <Grid item xs={12} sm={6} md={4}>
-      <Card className={classes.card}>
+      <Card className={classes.card} onClick={handleClick}>
         <CardMedia
           className={classes.cardMedia}
           image={picture_medium}
@@ -27,7 +30,7 @@ export default(props: IArtistCardProps) => {
             {name}
           </Typography>
           <Typography>
-            Fans: {Intl.NumberFormat('en-US').format(fans)}k
+            Fans: {formatFansCount(nb_fan)}
           </Typography>
         </CardContent>
       </Card>
