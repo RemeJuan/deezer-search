@@ -9,16 +9,16 @@ import ArtistPage from '../pages/artist.page';
 
 export const routes = {
   main: '/search/:query?',
-  artist: 'artis/:name'
+  artist: 'artist/:artistId'
 }
 
 export default () => (
   <Switch>
     <Route path={routes.main}>
-      <SearchPage/>
+      <SearchPage />
     </Route>
     <Route path={routes.artist}>
-      <ArtistPage/>
+      <ArtistPage />
     </Route>
     <Route path="*">
       <Redirect to='/search' />
