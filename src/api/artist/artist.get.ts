@@ -6,6 +6,8 @@ export const artistSearch = async (query: string): Promise<IArtist[]> => {
     method: 'GET',
     headers: DEFAULT_HEADERS,
   }
-  const response = await fetch(BASE_URL, options);
-  return await response.json();
+  const url = `${BASE_URL}/search/artist?limit=9&q=${query}`;
+  const response = await fetch(url, options);
+  const json = await response.json();
+  return json.data;
 }
