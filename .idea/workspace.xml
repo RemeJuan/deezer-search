@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caa6f8a5-a46a-4b4a-b167-49df0cfb6054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+    <list default="true" id="caa6f8a5-a46a-4b4a-b167-49df0cfb6054" name="Default Changelist" comment="none: removed old assets">
+      <change afterPath="$PROJECT_DIR$/src/api/api.constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/artist/artist.get.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/artist/artist.interface.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/app-bar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -85,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603177340271</updated>
-      <workItem from="1603177341373" duration="2251000" />
+      <workItem from="1603177341373" duration="4183000" />
     </task>
     <task id="LOCAL-00001" summary="none: added react">
       <created>1603177695361</created>
@@ -94,7 +89,35 @@
       <option name="project" value="LOCAL" />
       <updated>1603177695361</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="none: editor configs">
+      <created>1603179627799</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603179627799</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: updated title">
+      <created>1603179640009</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603179640009</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor: added typescript">
+      <created>1603179680519</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603179680519</updated>
+    </task>
+    <task id="LOCAL-00005" summary="none: removed old assets">
+      <created>1603179693355</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603179693355</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,13 +125,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="none: added react" />
-    <option name="LAST_COMMIT_MESSAGE" value="none: added react" />
+    <MESSAGE value="none: editor configs" />
+    <MESSAGE value="fix: updated title" />
+    <MESSAGE value="refactor: added typescript" />
+    <MESSAGE value="none: removed old assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="none: removed old assets" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="464" y="23" key="CommitChangelistDialog2" timestamp="1603177695236">
+    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2" timestamp="1603179697324">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="464" y="23" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1603177695236" />
+    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1603179697324" />
     <state x="542" y="264" width="596" height="522" key="find.popup" timestamp="1603178308646">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
