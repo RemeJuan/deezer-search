@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caa6f8a5-a46a-4b4a-b167-49df0cfb6054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/app-bar.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app-bar.styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/use-viewport.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/routes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/artist-card/artist-card.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/artist-card/artist-card.styles.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pages/artist.page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/search.page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/search/search.page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/search/search.styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app-bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app-bar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/artist/artist.get.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/artist/artist.get.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app-bar.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app-bar/app-bar.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app-bar.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app-bar/app-bar.styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app-bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app-bar/app-bar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artist-card/artist-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/routes.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/artist-card" />
+      <recent name="$PROJECT_DIR$/src/pages/search" />
+      <recent name="$PROJECT_DIR$/src/components/app-bar" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/pages" />
     </key>
@@ -91,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603177340271</updated>
-      <workItem from="1603177341373" duration="7417000" />
+      <workItem from="1603177341373" duration="9233000" />
     </task>
     <task id="LOCAL-00001" summary="none: added react">
       <created>1603177695361</created>
@@ -156,7 +160,49 @@
       <option name="project" value="LOCAL" />
       <updated>1603181910236</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="none: editor configs">
+      <created>1603184877728</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603184877728</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: adding event handlers to search bar">
+      <created>1603184893288</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603184893288</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: viewport context wrapper">
+      <created>1603184903725</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1603184903725</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: added app routes">
+      <created>1603184921064</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603184921064</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: attach router to app">
+      <created>1603184938179</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1603184938179</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: added react router">
+      <created>1603184952894</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1603184952894</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,17 +213,22 @@
     <MESSAGE value="fix: updated title" />
     <MESSAGE value="refactor: added typescript" />
     <MESSAGE value="none: removed old assets" />
-    <MESSAGE value="none: editor configs" />
     <MESSAGE value="wip: adding api endpoints" />
     <MESSAGE value="feat: main app bar" />
     <MESSAGE value="wip: artist card" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: artist card" />
+    <MESSAGE value="none: editor configs" />
+    <MESSAGE value="feat: adding event handlers to search bar" />
+    <MESSAGE value="feat: viewport context wrapper" />
+    <MESSAGE value="feat: added app routes" />
+    <MESSAGE value="feat: attach router to app" />
+    <MESSAGE value="feat: added react router" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added react router" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2" timestamp="1603181910138">
+    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2" timestamp="1603184952718">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1603181910138" />
+    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1603184952718" />
     <state x="542" y="264" width="596" height="522" key="find.popup" timestamp="1603178308646">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
