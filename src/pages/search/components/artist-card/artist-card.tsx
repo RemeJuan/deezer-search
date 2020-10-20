@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import {artistCardStyles} from './artist-card.styles';
 import {IArtistCardProps} from './artist-card.interface';
 import { useHistory } from 'react-router-dom';
-import {formatFansCount} from '../../core/core.utils';
+import {formatFansCount} from '../../../../core/core.utils';
 
 export default(props: IArtistCardProps) => {
   const history = useHistory();
