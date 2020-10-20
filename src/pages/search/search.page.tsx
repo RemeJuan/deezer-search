@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import AppBar from '../../components/app-bar/app-bar';
 import {artistSearch} from '../../api/artist/artist.get';
 import {IArtist} from '../../api/artist/artist.interface';
-import Card from '../../components/artist-card/artist-card';
+import Card from './components/artist-card/artist-card';
 import {Container} from '@material-ui/core';
 import {searchStyles} from './search.styles';
 import Grid from '@material-ui/core/Grid';
