@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caa6f8a5-a46a-4b4a-b167-49df0cfb6054" name="Default Changelist" comment="none: removed old assets">
-      <change afterPath="$PROJECT_DIR$/src/api/api.constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/artist/artist.get.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/artist/artist.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app-bar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/card.tsx" afterDir="false" />
+    <list default="true" id="caa6f8a5-a46a-4b4a-b167-49df0cfb6054" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/app-bar.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app-bar.styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/use-viewport.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/routes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/artist.page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/search.page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app-bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app-bar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +54,12 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="E2E Tests (musicdb-app-e2e)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
@@ -80,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603177340271</updated>
-      <workItem from="1603177341373" duration="4183000" />
+      <workItem from="1603177341373" duration="7417000" />
     </task>
     <task id="LOCAL-00001" summary="none: added react">
       <created>1603177695361</created>
@@ -117,7 +128,35 @@
       <option name="project" value="LOCAL" />
       <updated>1603179693355</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="none: editor configs">
+      <created>1603181871939</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603181871940</updated>
+    </task>
+    <task id="LOCAL-00007" summary="wip: adding api endpoints">
+      <created>1603181888902</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603181888902</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: main app bar">
+      <created>1603181900017</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603181900017</updated>
+    </task>
+    <task id="LOCAL-00009" summary="wip: artist card">
+      <created>1603181910236</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603181910236</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,17 +164,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="none: added react" />
-    <MESSAGE value="none: editor configs" />
     <MESSAGE value="fix: updated title" />
     <MESSAGE value="refactor: added typescript" />
     <MESSAGE value="none: removed old assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="none: removed old assets" />
+    <MESSAGE value="none: editor configs" />
+    <MESSAGE value="wip: adding api endpoints" />
+    <MESSAGE value="feat: main app bar" />
+    <MESSAGE value="wip: artist card" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip: artist card" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2" timestamp="1603179697324">
+    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2" timestamp="1603181910138">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1603179697324" />
+    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1603181910138" />
     <state x="542" y="264" width="596" height="522" key="find.popup" timestamp="1603178308646">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
