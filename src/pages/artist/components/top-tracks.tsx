@@ -19,10 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default (props: IArtistTopTracksProps) => {
   const {tracks} = props;
-  
   const classes = useStyles();
-  
-  
   
   return (
     <>
