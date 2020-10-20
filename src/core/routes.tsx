@@ -5,11 +5,11 @@ import {
   Redirect,
 } from "react-router-dom";
 import SearchPage from '../pages/search/search.page';
-import ArtistPage from '../pages/artist.page';
+import ArtistPage from '../pages/artist/artist.page';
 
 export const routes = {
   main: '/search/:query?',
-  artist: 'artist/:artistId'
+  artist: '/artist/:artistId'
 }
 
 export default () => (
