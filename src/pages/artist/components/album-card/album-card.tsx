@@ -6,7 +6,6 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import {albumCardStyles} from './album-card.styles';
 import {IAlbumCardProps} from './album-card.interface';
-import { useHistory } from 'react-router-dom';
 import {formatFansCount} from '../../../../core/core.utils';
 
 export default(props: IAlbumCardProps) => {
