@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caa6f8a5-a46a-4b4a-b167-49df0cfb6054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/artist-card/artist-card.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/artist-card/artist-card.styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/artist.page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/search/search.page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/search/search.styles.ts" afterDir="false" />
+    <list default="true" id="caa6f8a5-a46a-4b4a-b167-49df0cfb6054" name="Default Changelist" comment="none: added loading indicator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/artist/artist.get.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/artist/artist.get.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app-bar.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app-bar/app-bar.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app-bar.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app-bar/app-bar.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app-bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app-bar/app-bar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artist-card/artist-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/artist/artist.page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/artist/artist.page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +37,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/artist/components/album-card" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -56,12 +46,15 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/artist/components/album-card" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/artist/components/album-card" />
+      <recent name="$PROJECT_DIR$/src/pages/search/components" />
+      <recent name="$PROJECT_DIR$/src/pages/artist" />
       <recent name="$PROJECT_DIR$/src/components/artist-card" />
       <recent name="$PROJECT_DIR$/src/pages/search" />
-      <recent name="$PROJECT_DIR$/src/components/app-bar" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/pages" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
@@ -95,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603177340271</updated>
-      <workItem from="1603177341373" duration="9233000" />
+      <workItem from="1603177341373" duration="17217000" />
     </task>
     <task id="LOCAL-00001" summary="none: added react">
       <created>1603177695361</created>
@@ -202,36 +195,213 @@
       <option name="project" value="LOCAL" />
       <updated>1603184952894</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="none: workspace files">
+      <created>1603186686644</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603186686645</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix: fixed api call url">
+      <created>1603186703642</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603186703642</updated>
+    </task>
+    <task id="LOCAL-00018" summary="refactor: moved app bar to sub folder">
+      <created>1603186722435</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1603186722435</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix: updated import path">
+      <created>1603186742068</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1603186742068</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix: updated artist card to display API data">
+      <created>1603186776953</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603186776953</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat: search results page">
+      <created>1603186833433</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1603186833433</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: added artist tracks list endpoint and interface">
+      <created>1603187790142</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1603187790142</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix: updated artist route config">
+      <created>1603188118620</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1603188118620</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fix: added loading indicator">
+      <created>1603188133538</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1603188133538</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feat: added artist details api call">
+      <created>1603194228675</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1603194228676</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat: artist card">
+      <created>1603194244892</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1603194244892</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fix: added util for formatting fans count">
+      <created>1603194261251</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1603194261251</updated>
+    </task>
+    <task id="LOCAL-00028" summary="fix: updated route value">
+      <created>1603194274039</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1603194274040</updated>
+    </task>
+    <task id="LOCAL-00029" summary="wip: adding artist page">
+      <created>1603194290939</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1603194290939</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat: top tracks component">
+      <created>1603194662189</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1603194662190</updated>
+    </task>
+    <task id="LOCAL-00031" summary="refactor: moved artist cards component">
+      <created>1603194981133</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1603194981133</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fix: updated import reference">
+      <created>1603195022609</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1603195022609</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fix: updated import reference">
+      <created>1603195121529</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1603195121529</updated>
+    </task>
+    <task id="LOCAL-00034" summary="feat: album card">
+      <created>1603195878817</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1603195878817</updated>
+    </task>
+    <task id="LOCAL-00035" summary="feat: added albums endpoint">
+      <created>1603195895309</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1603195895309</updated>
+    </task>
+    <task id="LOCAL-00036" summary="none: added album display area">
+      <created>1603195912179</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1603195912179</updated>
+    </task>
+    <task id="LOCAL-00037" summary="none: added albums to artist page">
+      <created>1603195931127</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1603195931127</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="none: added react" />
-    <MESSAGE value="fix: updated title" />
-    <MESSAGE value="refactor: added typescript" />
-    <MESSAGE value="none: removed old assets" />
-    <MESSAGE value="wip: adding api endpoints" />
-    <MESSAGE value="feat: main app bar" />
-    <MESSAGE value="wip: artist card" />
-    <MESSAGE value="none: editor configs" />
-    <MESSAGE value="feat: adding event handlers to search bar" />
     <MESSAGE value="feat: viewport context wrapper" />
     <MESSAGE value="feat: added app routes" />
     <MESSAGE value="feat: attach router to app" />
     <MESSAGE value="feat: added react router" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added react router" />
+    <MESSAGE value="none: workspace files" />
+    <MESSAGE value="fix: fixed api call url" />
+    <MESSAGE value="refactor: moved app bar to sub folder" />
+    <MESSAGE value="fix: updated import path" />
+    <MESSAGE value="fix: updated artist card to display API data" />
+    <MESSAGE value="feat: search results page" />
+    <MESSAGE value="feat: added artist tracks list endpoint and interface" />
+    <MESSAGE value="fix: updated artist route config" />
+    <MESSAGE value="fix: added loading indicator" />
+    <MESSAGE value="feat: added artist details api call" />
+    <MESSAGE value="feat: artist card" />
+    <MESSAGE value="fix: added util for formatting fans count" />
+    <MESSAGE value="fix: updated route value" />
+    <MESSAGE value="wip: adding artist page" />
+    <MESSAGE value="feat: top tracks component" />
+    <MESSAGE value="refactor: moved artist cards component" />
+    <MESSAGE value="fix: updated import reference" />
+    <MESSAGE value="feat: album card" />
+    <MESSAGE value="feat: added albums endpoint" />
+    <MESSAGE value="none: added album display area" />
+    <MESSAGE value="none: added albums to artist page" />
+    <option name="LAST_COMMIT_MESSAGE" value="none: added albums to artist page" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2" timestamp="1603184952718">
+    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2" timestamp="1603195931011">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1603184952718" />
+    <state x="280" y="137" width="1152" height="772" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1603195931011" />
     <state x="542" y="264" width="596" height="522" key="find.popup" timestamp="1603178308646">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="542" y="264" width="596" height="522" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1603178308646" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/artist/components/album-card/album-card.tsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
