@@ -4,7 +4,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import SearchPage from '../pages/search.page';
+import SearchPage from '../pages/search/search.page';
 import ArtistPage from '../pages/artist.page';
 
 export const routes = {
