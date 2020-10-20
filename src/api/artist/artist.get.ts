@@ -1,4 +1,4 @@
-import {IArtist, IArtistTracks} from './artist.interface';
+import {IArtist, IArtistDetails, IArtistTracks} from './artist.interface';
 import {BASE_URL, DEFAULT_HEADERS} from '../api.constants';
 
 export const artistSearch = async (query: string): Promise<IArtist[]> => {
@@ -12,6 +12,15 @@ export const artistSearch = async (query: string): Promise<IArtist[]> => {
   return json.data;
 }
 
+export const artistDetails = async (artistId: number): Promise<IArtistDetails> => {
+  const options = {
+    method: 'GET',
+    headers: DEFAULT_HEADERS,
+  }
+  const url = `${BASE_URL}/artist/${artistId}`;
+  const response = await fetch(url, options);
+  return await response.json();
+}
 
 export const artistTracks = async (artistId: number): Promise<IArtistTracks[]> => {
   const options = {
