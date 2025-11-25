@@ -1,25 +1,24 @@
 import React from 'react';
-import {IArtistTopTracksProps} from '../artist.interface';
-import Typography from '@material-ui/core/Typography';
-import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
+import { IArtistTopTracksProps } from '../artist.interface';
+import Typography from '@mui/material/Typography';
+import { Theme } from '@mui/material/styles';
+import { makeStyles } from 'tss-react/mui';
+import Grid from '@mui/material/Grid';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    list: {
-      marginTop: theme.spacing(2),
-    },
-    listItem: {
-      marginTop: theme.spacing(1),
-      marginBottom: theme.spacing(1),
-      backgroundColor: theme.palette.background.paper,
-    }
-  }),
-);
+const useStyles = makeStyles()((theme: Theme) => ({
+  list: {
+    marginTop: theme.spacing(2),
+  },
+  listItem: {
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+    backgroundColor: theme.palette.background.paper,
+  }
+}));
 
-export default (props: IArtistTopTracksProps) => {
-  const {tracks} = props;
-  const classes = useStyles();
+export default function TopTracks(props: IArtistTopTracksProps) {
+  const { tracks } = props;
+  const { classes } = useStyles();
   
   return (
     <>

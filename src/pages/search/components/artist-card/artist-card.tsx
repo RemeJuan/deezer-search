@@ -1,21 +1,21 @@
 import React from 'react';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import {artistCardStyles} from './artist-card.styles';
-import {IArtistCardProps} from './artist-card.interface';
-import { useHistory } from 'react-router-dom';
-import {formatFansCount} from '../../../../core/core.utils';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import { artistCardStyles } from './artist-card.styles';
+import { IArtistCardProps } from './artist-card.interface';
+import { useNavigate } from 'react-router-dom';
+import { formatFansCount } from '../../../../core/core.utils';
 
-export default(props: IArtistCardProps) => {
-  const history = useHistory();
-  const classes = artistCardStyles();
-  const {artist} = props;
+export default function ArtistCard(props: IArtistCardProps) {
+  const navigate = useNavigate();
+  const { classes } = artistCardStyles();
+  const { artist } = props;
   
-  const {id, picture_medium, name, nb_fan} = artist;
-  const handleClick = () => history.push(`/artist/${id}`);
+  const { id, picture_medium, name, nb_fan } = artist;
+  const handleClick = () => navigate(`/artist/${id}`);
   
   return (
     <Grid item xs={12} sm={6} md={4}>

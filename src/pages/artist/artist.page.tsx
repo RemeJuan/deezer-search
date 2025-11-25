@@ -1,33 +1,34 @@
-import React, {useEffect, useState} from 'react';
-import {useRouteMatch} from 'react-router-dom';
-import {IArtistAlbum, IArtistDetails, IArtistTracks} from '../../api/artist/artist.interface';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { IArtistAlbum, IArtistDetails, IArtistTracks } from '../../api/artist/artist.interface';
 import AppBar from '../../components/app-bar/app-bar';
-import {artistAlbums, artistDetails, artistTracks} from '../../api/artist/artist.get';
-import LinearProgress from '@material-ui/core/LinearProgress';
-import {Container} from '@material-ui/core';
-import {searchStyles} from '../search/search.styles';
+import { artistAlbums, artistDetails, artistTracks } from '../../api/artist/artist.get';
+import LinearProgress from '@mui/material/LinearProgress';
+import { Container } from '@mui/material';
+import { searchStyles } from '../search/search.styles';
 import ArtistBox from './components/artist-box';
-import Grid from '@material-ui/core/Grid';
+import Grid from '@mui/material/Grid';
 import TopTracks from './components/top-tracks';
 import Albums from './components/albums';
 
-export default () => {
-  const classes = searchStyles();
+export default function ArtistPage() {
+  const { classes } = searchStyles();
   const [artist, setArtist] = useState<IArtistDetails>();
   const [tracks, setTracks] = useState<IArtistTracks[]>([]);
   const [albums, setAlbums] = useState<IArtistAlbum[]>([]);
   
-  const match = useRouteMatch();
-  // @ts-ignore
-  const artistId = match.params.artistId;
+  const params = useParams<{ artistId: string }>();
+  const artistId = params.artistId;
   
   useEffect(() => {
     async function load() {
-      const details = await artistDetails(artistId);
-      const tracks = await artistTracks(artistId);
-      const albums = await artistAlbums(artistId);
+      if (!artistId) return;
       
-      const response = await Promise.all([details, tracks, albums]);
+      const details = await artistDetails(Number(artistId));
+      const tracksData = await artistTracks(Number(artistId));
+      const albumsData = await artistAlbums(Number(artistId));
+      
+      const response = await Promise.all([details, tracksData, albumsData]);
       
       setArtist(response[0]);
       setTracks(response[1]);

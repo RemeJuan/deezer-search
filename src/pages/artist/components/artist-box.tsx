@@ -1,36 +1,35 @@
 import React from 'react';
-import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Typography from '@material-ui/core/Typography';
-import {IArtistBoxProps} from '../artist.interface';
-import {formatFansCount} from '../../../core/core.utils';
+import { Theme } from '@mui/material/styles';
+import { makeStyles } from 'tss-react/mui';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { IArtistBoxProps } from '../artist.interface';
+import { formatFansCount } from '../../../core/core.utils';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      display: 'flex',
-      height: 300
-    },
-    details: {
-      display: 'flex',
-      flexDirection: 'column',
-    },
-    content: {
-      flex: '1 0 auto',
-    },
-    cover: {
-      width: 250,
-    },
-  }),
-);
+const useStyles = makeStyles()((theme: Theme) => ({
+  root: {
+    display: 'flex',
+    height: 300
+  },
+  details: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  content: {
+    flex: '1 0 auto',
+  },
+  cover: {
+    width: 250,
+  },
+}));
 
-export default (props: IArtistBoxProps) => {
-  const classes = useStyles();
+export default function ArtistBox(props: IArtistBoxProps) {
+  const { classes } = useStyles();
   
-  const {artist} = props;
-  const {picture_big, name, nb_fan} = artist;
+  const { artist } = props;
+  const { picture_big, name, nb_fan } = artist;
   
   return (
     <Card className={classes.root}>
