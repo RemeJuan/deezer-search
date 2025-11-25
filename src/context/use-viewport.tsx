@@ -1,9 +1,9 @@
 import React, {
   createContext,
-  FC,
   useContext,
   useEffect,
   useState,
+  ReactNode,
 } from 'react'
 
 interface IViewport {
@@ -11,12 +11,16 @@ interface IViewport {
   height: number;
 }
 
+interface ViewportProviderProps {
+  children: ReactNode;
+}
+
 const ViewportContext = createContext<IViewport>({
   width: window.innerWidth,
   height: window.innerHeight,
 })
 
-export const ViewportProvider: FC = ({children}) => {
+export const ViewportProvider = ({ children }: ViewportProviderProps) => {
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
   const handleResize = () => {

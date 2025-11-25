@@ -1,6 +1,6 @@
-import {makeStyles} from '@material-ui/core/styles';
+import { makeStyles } from 'tss-react/mui';
 
-export const artistCardStyles = makeStyles(() => ({
+export const artistCardStyles = makeStyles()(() => ({
   card: {
     height: '100%',
     display: 'flex',

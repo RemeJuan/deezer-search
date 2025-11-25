@@ -1,27 +1,24 @@
 import React from 'react';
 import {
-  Switch,
+  Routes,
   Route,
-  Redirect,
+  Navigate,
 } from "react-router-dom";
 import SearchPage from '../pages/search/search.page';
 import ArtistPage from '../pages/artist/artist.page';
 
-export const routes = {
+export const routePaths = {
   main: '/search/:query?',
   artist: '/artist/:artistId'
 }
 
-export default () => (
-  <Switch>
-    <Route path={routes.main}>
-      <SearchPage />
-    </Route>
-    <Route path={routes.artist}>
-      <ArtistPage />
-    </Route>
-    <Route path="*">
-      <Redirect to='/search' />
-    </Route>
-  </Switch>
-)
+const AppRoutes = () => (
+  <Routes>
+    <Route path="/search" element={<SearchPage />} />
+    <Route path="/search/:query" element={<SearchPage />} />
+    <Route path="/artist/:artistId" element={<ArtistPage />} />
+    <Route path="*" element={<Navigate to="/search" replace />} />
+  </Routes>
+);
+
+export default AppRoutes;

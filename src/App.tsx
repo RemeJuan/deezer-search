@@ -1,20 +1,20 @@
 import React from 'react';
-import {createMuiTheme, useMediaQuery, ThemeProvider} from '@material-ui/core';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { createTheme, useMediaQuery, ThemeProvider } from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
-import routes from './core/routes';
-import {ViewportProvider} from './context/use-viewport';
+import AppRoutes from './core/routes';
+import { ViewportProvider } from './context/use-viewport';
 
 function App() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   
   const theme = React.useMemo(
     () =>
-      createMuiTheme({
+      createTheme({
         palette: {
-          type: prefersDarkMode ? 'dark' : 'light',
+          mode: prefersDarkMode ? 'dark' : 'light',
         },
       }),
     [prefersDarkMode],
@@ -27,7 +27,7 @@ function App() {
         <main>
           <ViewportProvider>
             <div>
-              {routes()}
+              <AppRoutes />
             </div>
           </ViewportProvider>
         </main>

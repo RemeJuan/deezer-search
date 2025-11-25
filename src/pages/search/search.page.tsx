@@ -1,15 +1,15 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import AppBar from '../../components/app-bar/app-bar';
-import {artistSearch} from '../../api/artist/artist.get';
-import {IArtist} from '../../api/artist/artist.interface';
+import { artistSearch } from '../../api/artist/artist.get';
+import { IArtist } from '../../api/artist/artist.interface';
 import Card from './components/artist-card/artist-card';
-import {Container} from '@material-ui/core';
-import {searchStyles} from './search.styles';
-import Grid from '@material-ui/core/Grid';
-import LinearProgress from '@material-ui/core/LinearProgress';
+import { Container } from '@mui/material';
+import { searchStyles } from './search.styles';
+import Grid from '@mui/material/Grid';
+import LinearProgress from '@mui/material/LinearProgress';
 
-export default () => {
-  const classes = searchStyles();
+export default function SearchPage() {
+  const { classes } = searchStyles();
   const [artists, setArtists] = useState<IArtist[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   

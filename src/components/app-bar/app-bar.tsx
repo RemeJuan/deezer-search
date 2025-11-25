@@ -1,29 +1,26 @@
-import React, {useEffect, useState} from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import InputBase from '@material-ui/core/InputBase';
-import SearchIcon from '@material-ui/icons/Search';
-import {Equalizer} from '@material-ui/icons';
-import {useRouteMatch } from 'react-router-dom';
-import {appBarStyles} from './app-bar.styles';
-import {IAppBar} from './app-bar.interface';
+import React, { useState } from 'react';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import InputBase from '@mui/material/InputBase';
+import SearchIcon from '@mui/icons-material/Search';
+import { Equalizer } from '@mui/icons-material';
+import { useParams } from 'react-router-dom';
+import { appBarStyles } from './app-bar.styles';
+import { IAppBar } from './app-bar.interface';
 
-export default (props: IAppBar) => {
-  const {handleSubmit} = props;
-  const classes = appBarStyles();
-  const match = useRouteMatch();
+export default function AppBarComponent(props: IAppBar) {
+  const { handleSubmit } = props;
+  const { classes } = appBarStyles();
+  const params = useParams<{ query?: string }>();
   
-  // @ts-ignore
-  const q = match.params.query ?? '';
+  const q = params.query ?? '';
   const [query, setQuery] = useState<string>(q);
-  
-  useEffect(() => {}, [q]);
   
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
   }
   
-  const onSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     return handleSubmit(query);
   }
