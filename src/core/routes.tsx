@@ -8,15 +8,16 @@ import SearchPage from '../pages/search/search.page';
 import ArtistPage from '../pages/artist/artist.page';
 
 export const routePaths = {
-  main: '/search/:query?',
+  search: '/search',
+  searchWithQuery: '/search/:query',
   artist: '/artist/:artistId'
 }
 
 const AppRoutes = () => (
   <Routes>
-    <Route path="/search" element={<SearchPage />} />
-    <Route path="/search/:query" element={<SearchPage />} />
-    <Route path="/artist/:artistId" element={<ArtistPage />} />
+    <Route path={routePaths.search} element={<SearchPage />} />
+    <Route path={routePaths.searchWithQuery} element={<SearchPage />} />
+    <Route path={routePaths.artist} element={<ArtistPage />} />
     <Route path="*" element={<Navigate to="/search" replace />} />
   </Routes>
 );
